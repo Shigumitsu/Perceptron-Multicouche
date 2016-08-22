@@ -188,7 +188,7 @@ def main():
     # On affiche la valeur de la sortie finale
     print("Valeur de la sortie finale :")
     for _ in range(layer_output.get_nb_neurons()):
-        print("\tNeurone n°", _, ":", layer_output.get_neuron(_).get_sigmoid())
+        print("\tNeurone n°", _ + 1, ":", layer_output.get_neuron(_).get_sigmoid())
 
     print("\nTerminée !")
 
