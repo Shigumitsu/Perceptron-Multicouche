@@ -146,7 +146,7 @@ def main():
 
                 for _ in range(layer_hidden.get_neuron(i).get_nb_weights()):
                     rm += layer_output.get_neuron(_).get_error() * \
-                    layer_hidden.get_neuron(_).get_weight(_)
+                    layer_hidden.get_neuron(i).get_weight(_)
                 layer_hidden.get_neuron(i).set_error(phy * rm)
 
             print("\tCorrection poids sortie...")
